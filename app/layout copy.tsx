@@ -13,18 +13,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
+  return ( 
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous"></link>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous"></link>
       </head>
       <style
-        dangerouslySetInnerHTML={{
-          __html: "\n\n\nbutton:focus {\n    outline: none !important;\n}\n\n"
-        }}
-      />
+  dangerouslySetInnerHTML={{
+    __html: "\n\n\nbutton:focus {\n    outline: none !important;\n}\n\n"
+  }}
+/>
 
       <body className={inter.className}>{children}</body>
-    </html>
+    </html>  
   )
 }
